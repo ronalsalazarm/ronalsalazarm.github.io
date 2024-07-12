@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#fondo-producto{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 50px; 
+}
+#fondo-producto h2{
+    font-family: verdana;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#detalleproductos{
+    width: 80%;
+    margin:10px auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.tarjeta{
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    border: solid 1px #999;
+    padding: 15px;
+    margin: 20px 0;
+    transition: all 0.5s;
+}
+.tarjeta:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.imgtarjeta{
+    width: 100%;
+    height: 250px;
+}
+.img01{
+    background: url(img/productos/chicha-morada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img02{
+    background: url(img/productos/chupetin-globo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img03{
+	background: url(img/productos/perita.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img04{
+	background: url(img/productos/caramelo-frittitas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img05{
+    background: url(img/productos/bigben.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img06{
+	background: url(img/productos/butter-toffees.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img07{
+	background: url(img/productos/triangulo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img08{
+	background: url(img/productos/chocollate-m&m.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img09{
+	background: url(img/productos/chocolate-milkyway.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img10{
+	background: url(img/productos/chocolate-snickers.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img11{
+	background: url(img/productos/bonbon.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img12{
+	background: url(img/productos/chupetin-globo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.descripcion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descripcion p{
+    font-family: verdana;
+    font-size: 1.2em;
+    text-align: center;
+}
+.descripcion span{
+    font-size: 1.3em;
+    color: red;
+}
+.botones{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    column-gap: 2em;
+}
+.btncarrito{
+    width: 20%;
+    height: 30px;
+    background: #E6305D;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btncarrito a{
+    color: #FFF;
+}
+.btncarrito:hover{
+    background: black;
+}
+.btndetalle{
+    width: 50%;
+    height: 30px;
+    font-size: 0.8em;
+    background: #E6305D;
+    color: #FFF;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btndetalle:hover{
+   background: black
+}
+
+@media screen and (max-width:980px) {
+    #fondo-producto{
+        width: 90%;
+    }
+    #detalleproductos{
+        width: 90%;
+       
+    }
+    .tarjeta{
+        width: 48%;
+       
+    }
+    .imgtarjeta{
+        height: 220px;
+    }
+    .descripcion p{
+        font-size: 1em;  
+    }
+    .descripcion span{
+        font-size: 1.1em;  
+    }
+    .btndetalle{
+        width: 50%;
+        height: 30px;
+        font-size: 0.7em;
+       
+    }
+}
+
+@media screen and (max-width:480px){
+    #contenedor{
+        width: 98%;
+    }
+    #fondo-producto{
+        width: 95%;
+    }
+    #detalleproductos{
+        width: 95%;
+       
+    }
+}

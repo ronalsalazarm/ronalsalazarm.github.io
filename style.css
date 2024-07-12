@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #9e558a;
+    position: fixed;
+	z-index: 10000000;
+	top: 0;
+	left: 0;
+}
+#contenedor{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img{
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border-radius: 50%;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5em;
+}
+#logo h4{
+    color: #FFF;
+    font-family: verdana;
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+    column-gap: 2em;
+    margin-top: 0.5em;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 20px;
+    color: #FFF;
+}
+/* Estilos del Carousel */
+.slide{
+	margin-top: 120px;
+}
+.slide img{
+	height: 70vh;
+}
+.carousel-caption{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-caption h2 {
+	font-family: verdana;
+	font-size:3em;
+	color: #9e558a;
+}
+.carousel-caption p{
+	font-family: verdana;
+	font-size: 1.5em;
+	color: #9e558a;
+	text-align: center;
+	font-weight: bold;
+}
+.caption-center{
+	top: 10%;
+}
+.controles{
+	width: 10%;
+	
+}
+.controles:hover{
+	background: none;
+}
+.iconos{
+	width: 50px;
+	height: 50px;
+	color: #FFF;
+}
+.btnCTA{
+	text-decoration: none;
+	font-family: verdana;
+	font-size: 1.2em;
+	border-radius: 10px;
+	border: none;
+	width: 200px;
+	height: 50px;
+	display: block;
+	background:  #9e558a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+}
+
+.btnCTA:hover{
+	background: orange;
+	color: white;
+}
+section{
+    width: 80%;
+    height: auto;
+    margin: 20px auto
+}
+section h2{
+    font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+#productos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.producto{
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+#imgcaramelos{
+    width: 200px;
+    height: 200px;
+    background: skyblue;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#imgcaramelos:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+}
+#imgchupetines{
+    width: 200px;
+    height: 200px;
+    background: #8d92fa;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#imgchupetines:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#imgchocolates{
+    width: 200px;
+    height: 200px;
+    background: #fac3f6;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#imgchocolates:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)
+}
+#imggalletas{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#imggalletas:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.btncaramelos,.btnchupetines, .btnchocolates,.btngalletas{
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #9e558a;
+    border-radius: 5px;
+    color: #FFF;
+}
+.btncaramelos:hover,.btnchupetines:hover, .btnchocolates:hover,.btngalletas:hover{
+   background: orange;
+    color: #FFF;
+}
+
+
+#fondo-testimonios{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+}
+#fondo-testimonios h2{
+    font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 30px;
+}
+.testimonios{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 2em;
+
+}
+.testimonio{
+    width: 30%;
+    height: auto;
+    border: solid 1px red;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 0.5s;
+}
+.testimonio:hover{
+    transform: scale(1.1);
+}
+.imgtestimonio{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+.contenido p{
+    font-family: verdana;
+    font-size: 15px;
+    text-align: justify;
+}
+.tes1{
+    background: url(img/testimonio01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tes2{
+    background: url(img/testimonio02.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tes3{
+    background: url(img/testimonio03.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.derecha p {
+    text-align: right;
+}
+#fondo-confianza{
+    width: 80%;
+    height: auto;
+    margin:30px auto;
+}
+#fondo-confianza h2{
+    font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+#marcas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    column-gap: 1em;
+
+}
+.marca{
+    width: 18%;
+    height: auto;
+}
+.marca img{
+    width: 100%;
+    height: 150px;
+}
+
+#fondo-catalogo{
+    width: 80%;
+    height: auto;
+    margin:30px auto;
+}
+#fondo-catalogo h2{
+    font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+#catalogos{
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+}
+.txtemail{
+    width: 300px;
+    padding: 0px 5px;
+    border: solid 1px red;
+}
+.btncatalogo{
+    text-decoration: none;
+	font-family: verdana;
+	font-size: 1.2em;
+	border-radius: 10px;
+	border: none;
+	width: 200px;
+	height: 50px;
+	display: block;
+	background:  #9e558a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+}
+.btncatalogo:hover{
+	background: orange;
+	color: white;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background:#9e558a ;
+}
+#footerarriba{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1em;
+    padding: 10px;
+
+}
+#foot1{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foot1 img{
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+    border-radius: 50%;
+}
+#foot2{
+    width: 35%;
+    height: auto;
+}
+#redes{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 1em;
+}
+.rs{
+    width: 60px;
+    height: 60px;
+    background: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.rs a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+#foot3{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px;
+}
+#foot3 p{
+    width: 100%;
+    font-family: verdana;
+    font-size: 1em;
+    color: #FFF;
+}
+#footerabajo{
+    width: 100%;
+    height: auto;
+    background: #602a57;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    font-family: verdana;
+    font-size: 30px;
+}
+@media screen and (max-width:980px){
+    #contenedor{
+        width: 95%;
+    }
+    nav ul{
+        column-gap: 1em;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+    .slide{
+        display: block;
+        width: 100%;;
+    }
+    .carousel-caption h2 {
+        font-size:1.5em;
+    }
+    .carousel-caption p{
+        font-size: 1.0em;
+    }
+    .slide img{
+         height: 40vh;
+    }
+    .caption-center{
+        top: 5%;
+        }
+        .btnCTA{
+        font-size: 1.0em;
+        width: 130px;
+        height: 50px;
+        }
+    section{
+        width: 90%;
+    }
+    .producto{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    #fondo-testimonios{
+		width: 95%;
+	}
+    .testimonio{
+        width: 45%;
+    }
+
+    #fondo-confianza{
+        width: 95%;
+    }
+    .marca{
+        width: 30%;
+    }
+ 
+    #foot1,#foot2,#foot3{
+		width: 100%;
+       
+	}
+    #footerabajo{
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:480px){
+    #contenedor{
+        width: 98%;
+    }
+    #logo img{
+        width: 50px;
+        height: 50px;
+    }
+    #logo h4{
+        font-size: 10px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .slide {
+        top: -25px;
+   }
+   #imgcaramelos,#imgchupetines, #imgchocolates,#imggalletas{
+    width: 150px;
+    height: 150px;
+   }
+
+   #fondo-testimonios{
+    width: 98%;
+   }
+   .testimonios{
+    width: 100%;
+   }
+   .testimonio{
+    padding: 5px;
+   }
+   .contenido p{
+    font-size: 10px;
+   }
+   .imgtestimonio{
+    width: 100px;
+    height: 100px;
+   }
+   #footerarriba{
+    width: 100%;
+   }
+   #footerabajo H6{
+    font-size: 13px;
+  }
+ 
+}
